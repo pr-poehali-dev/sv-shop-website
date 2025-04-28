@@ -1,12 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Header from "@/components/Header";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1 container mx-auto py-8 px-4">
+        <div className="text-center max-w-2xl mx-auto mt-12">
+          <h1 className="text-4xl font-bold mb-4 text-foreground">
+            Добро пожаловать в <span className="gradient-text">SV SHOP</span>
+          </h1>
+          <p className="text-xl text-muted-foreground">
+            Личный сайт с информацией и интернет-магазин
+          </p>
+        </div>
+      </main>
     </div>
   );
 };

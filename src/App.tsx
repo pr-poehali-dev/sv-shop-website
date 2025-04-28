@@ -17,6 +17,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          {/* Заглушки для будущих страниц */}
+          <Route path="/services" element={<NotFound />} />
+          <Route path="/contacts" element={<NotFound />} />
+          <Route path="/projects" element={<NotFound />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
