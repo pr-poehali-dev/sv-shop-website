@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -34,9 +33,9 @@ const Header = () => {
         </nav>
 
         {/* Кнопка авторизации */}
-        <Button variant="outline" size="sm">
+        <a href="#" className="px-4 py-2 border border-input rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
           Авторизация
-        </Button>
+        </a>
       </div>
     </header>
   );
